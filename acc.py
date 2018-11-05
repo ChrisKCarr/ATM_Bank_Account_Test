@@ -16,6 +16,8 @@ class Account:
             file.write(str(self.balance))
 
 class Checking(Account):
+    
+    type="checking"
 
     def __init__(self, filepath, fee):
         Account.__init__(self, filepath)
@@ -24,7 +26,12 @@ class Checking(Account):
     def transfer(self, amount):
         self.balance=self.balance - amount - self.fee
 
-checking=Checking("account\\balance.txt", 1)
-checking.transfer(100)
-print(checking.balance)
-checking.commit()
+chris_checking=Checking("account\\chris.txt", 1)
+chris_checking.transfer(100)
+print(chris_checking.balance)
+chris_checking.commit()
+
+mike_checking=Checking("account\\mike.txt", 1)
+mike_checking.transfer(100)
+print(mike_checking.balance)
+mike_checking.commit()
