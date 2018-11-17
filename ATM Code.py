@@ -8,7 +8,7 @@ class Account:
         self.balance = balance
         
     def __str__(self):
-        return f'Account Owner: {self.owner}\nAccount Balance: ${self.balance} '
+        return f'Account Owner: {self.owner}\nAccount Balance: ${self.balance}'
     
     def deposit(self,dep_amt):
         self.balance += dep_amt
