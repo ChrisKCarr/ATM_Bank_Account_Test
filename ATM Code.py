@@ -19,5 +19,6 @@ class Account:
             self.balance -= wit_amt
             print(f'${wit_amt} was withdrawn from the account for {self.owner}')
         else:
-            print(f'The account for {self.owner} does not have the required funds to make this withdrawl\nThe current balance is ${self.balance}')
+            print(f'The account for {self.owner} does not have the required funds to make this withdrawl\n
+            The current balance is ${self.balance}')
         
