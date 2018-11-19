@@ -16,7 +16,7 @@ class Account:
         
     def withdraw(self,wit_amt):
         if self.balance >= wit_amt:
-            self.balance -= wit_amt
+            self.balance -= wit_amt  
             print(f'${wit_amt} was withdrawn from the account for {self.owner}')
         else:
             print(f'The account for {self.owner} does not have the required funds to make this withdrawl\n
